@@ -1,0 +1,133 @@
+
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background: url(/img/3w.jpg) no-repeat center center fixed;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        font-family: 'Roboto', sans-serif;
+        color: white;
+    }
+
+
+    form {
+        max-width: 400px; 
+        width: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(10px);
+        padding: 1.3rem; 
+        color: #f2f2f2;
+    }
+
+    form header {
+        text-align: center;
+        margin-bottom: 0.9rem; 
+    }
+
+    form header h2 {
+        font-weight: 600;
+        font-size: 1.4rem; 
+        margin-bottom: 0.2rem;
+    }
+
+    form header p {
+        font-size: 0.8rem;
+        opacity: 0.8;
+    }
+
+    form label {
+        font-size: 0.8rem; 
+        margin-top: 0.6rem;
+        display: block;
+    }
+
+    #firstName, #lastName, #email, #password, #color, #date, #range,.checkbox-group, #options, #comments {
+        width: 100%;
+        padding: 0.55rem; 
+        margin-top: 0.2rem;
+        margin-bottom: 0.7rem;
+        border: none;
+        border-radius: 6px;
+        background: rgba(255, 255, 255, 0.15);
+        color: #fff;
+        font-size: 0.9rem;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    #color {
+        height: 1.7rem;
+        padding: 0.3rem;
+    }
+
+    #range {
+        accent-color: #2245be;
+    }
+    
+    #firstName:focus, #lastName:focus, #email:focus, #password:focus, #date:focus, #range:focus, .checkbox-group:focus, #options:focus, #comments:focus {
+        background-color: rgba(255, 255, 255, 0.25);
+        transform: scale(1.02);
+        outline: none;
+    }
+
+    .checkbox-group {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.8rem; 
+    }
+
+    .checkbox-group label{
+        margin: 0;  
+    }
+    
+    #options option {
+        color: #000000;
+    }
+    
+    label::selection {
+        color: #3d5ed6;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+    }
+
+    footer #reset, footer #submit, #return {
+        padding: 0.6rem 1rem; 
+        font-size: 0.9rem; 
+        border: none;
+        border-radius: 6px;
+        color: #fff;
+        background: linear-gradient(35deg, #2724f8, #fa0075);
+        background-size: 200%;
+        background-position: 0%;
+        transition: background-position 0.3s ease, transform 0.3s ease;
+        
+    }
+
+    footer #reset:hover, footer #submit:hover, #return:hover {
+        background-position: 100%;
+        transform: scale(1.05);
+        background: linear-gradient(35deg, #2245be, #0ad497);
+    }
+
+    form main input:hover, form main textarea:hover, form main select:hover {
+        transform: scale(1.01);
+    }
+
+    footer a {
+        color: white;
+        text-decoration: none
+    }
