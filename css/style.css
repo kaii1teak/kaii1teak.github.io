@@ -11,9 +11,6 @@ html, body {
 
 body {
     background: url('../img/background2.gif');
-    background-size: cover; /* Ensures the image covers the entire screen */
-    background-repeat: no-repeat; /* Prevents tiling */
-    background-position: center; /* Centers the image */
     color: whitesmoke;
     font-family: Poppins, sans-serif;
 }
