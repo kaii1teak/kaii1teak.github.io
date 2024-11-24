@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    background: url('../img/background2.gif'), #0B0D13;
+    background-color: #0B0D13;
     height: 100vh; /* Ensures it spans the full height of the viewport */
     width: 100%; /* Ensures it spans the full width of the viewport */
     color: whitesmoke;
@@ -118,7 +118,7 @@ nav {
 /*section 1*/
 
 #section-1 {
-    background-color: transparent;
+    background: url('../img/background2.gif');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
