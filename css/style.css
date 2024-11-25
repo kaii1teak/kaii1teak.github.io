@@ -606,13 +606,20 @@ aside {
 @media screen and (max-width: 480px) {
     /* Навигация */
     body {
-        background: url('../img/background2.jpg') no-repeat center center fixed;
+        background: url('../img/background.png') no-repeat center center fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
     }
     
     nav {
         padding: 10px 20px;
         position: fixed;
-        background-color: rgb(22, 22, 24);
+        background-color: transparent;
+        backdrop-filter: blur(50px);
     }
 
     #logo img {
