@@ -605,7 +605,9 @@ aside {
 
 @media screen and (max-width: 480px) {
     /* Навигация */
-
+    body {
+        background: url('../img/background2.jpg') no-repeat center center fixed;
+    }
     
     nav {
         padding: 10px 20px;
