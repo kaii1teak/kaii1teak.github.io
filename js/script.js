@@ -145,3 +145,63 @@ class InfiniteSlider {
   
 
 new InfiniteSlider('#slider');
+
+document.addEventListener("DOMContentLoaded", () => {
+    const logos = document.querySelectorAll(".partner-logo img");
+    const logoSources = [
+        "https://cms.wedesign.pl/wp-content/uploads/2023/02/Group-1-3.svg",
+        "https://cms.wedesign.pl/wp-content/uploads/2023/02/Group-2-3.svg",
+        "https://cms.wedesign.pl/wp-content/uploads/2023/02/OnWhite-FullColor-V.svg",
+        "https://cms.wedesign.pl/wp-content/uploads/2023/02/Group-5-1.svg",
+        "https://cms.wedesign.pl/wp-content/uploads/2023/02/Group-4-2.svg",
+        "https://cms.wedesign.pl/wp-content/uploads/2023/02/layer1-2.svg",
+        "https://cms.wedesign.pl/wp-content/uploads/2023/02/Vector-2.svg",
+        "https://cms.wedesign.pl/wp-content/uploads/2023/02/Group-6.svg",
+        "https://cms.wedesign.pl/wp-content/uploads/2023/02/Group-2-2.svg",
+        "https://cms.wedesign.pl/wp-content/uploads/2023/02/Vector-1-1.svg",
+        "https://cms.wedesign.pl/wp-content/uploads/2023/02/Group-3-1.svg",
+        "https://cms.wedesign.pl/wp-content/uploads/2023/02/Group-5.svg",
+        "https://cms.wedesign.pl/wp-content/uploads/2023/02/Group-4-1.svg",
+        "https://cms.wedesign.pl/wp-content/uploads/2023/02/Vector-1.svg",
+        "https://cms.wedesign.pl/wp-content/uploads/2023/02/Group-1-1.svg",
+        "https://cms.wedesign.pl/wp-content/uploads/2023/02/Group-4.svg",
+        "https://cms.wedesign.pl/wp-content/uploads/2023/02/Group-3.svg",
+        "https://cms.wedesign.pl/wp-content/uploads/2023/02/Group.svg",
+        "https://cms.wedesign.pl/wp-content/uploads/2023/02/Group-2.svg",
+        "https://cms.wedesign.pl/wp-content/uploads/2023/02/Vector.svg",
+    ];
+
+    // Preload images
+    const preloadImages = (sources) => {
+        sources.forEach((src) => {
+            const img = new Image();
+            img.src = src;
+        });
+    };
+    preloadImages(logoSources);
+
+    // Smoothly replace logos
+    const replaceLogoWithTransition = () => {
+        const randomLogoIndex = Math.floor(Math.random() * logos.length);
+        const randomSourceIndex = Math.floor(Math.random() * logoSources.length);
+
+        const currentLogo = logos[randomLogoIndex];
+
+        // Add fade-out class
+        currentLogo.classList.add("fade-out");
+
+        // Wait for the fade-out transition, then change the image
+        setTimeout(() => {
+            currentLogo.src = logoSources[randomSourceIndex];
+            currentLogo.classList.remove("fade-out");
+            currentLogo.classList.add("fade-in");
+
+            // Remove the fade-in class after transition
+            setTimeout(() => {
+                currentLogo.classList.remove("fade-in");
+            }, 500); // Match CSS transition duration
+        }, 500); // Match CSS transition duration
+    };
+
+    setInterval(replaceLogoWithTransition, 2000); // Change every 5 seconds
+});

@@ -385,8 +385,8 @@ aside {
 }
 
 .slide {
-    flex: 0 0 calc(25.1% - 9.7px); /* Four slides with gap */
-    margin-right: 9.7px;
+    flex: 0 0 calc(25% - 10px); /* Four slides with gap */
+    margin-right: 10px;
     text-align: left;
     
 }
@@ -535,8 +535,13 @@ aside {
 
 /* section-5 */
 
+#section-5 {
+    padding: 60px;
+}
+
 #section-5 .title {
     margin-top: 30px;
+    margin-left: 60px;
     font-size: 3rem;
     font-weight: 900;
     font-family: 'pp-neue-montreal';
@@ -545,25 +550,115 @@ aside {
     margin-right: auto;
 }
 
-
-@keyframes slide {
-    from    { transform: translateX(0); }
-    to      { transform: translateX(-100%); }    
+  
+/* Adaptive grid for partner logos */
+.partners-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    row-gap: 30px;
+    padding: 0 20px;
+    justify-items: center;
+    align-items: center;
+    width: 50%;
+    margin-left: auto;
 }
-
-.logos {
-    overflow: hidden;
-    padding: 60px 0;
-    white-space: nowrap;
-}
-
-.logos-slide {
-    display: inline-block;
-    animation: slide 40s linear infinite;
-}
-
-.logos-slide img {
+  
+.partner-logo img {
+    max-width: 100%;
+    height: 50px;
+    object-fit: contain;
+    transition:
+      transform 0.5s ease,
+      opacity 0.3s ease;
     filter: invert();
-    height: 61px;
-    margin: 0 30px;
+}
+  
+/* Hover effect */
+.partner-logo img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+  
+  /* Fade-out and fade-in effects */
+.partner-logo img.fade-out {
+    opacity: 0;
+}
+  
+.partner-logo img.fade-in {
+    opacity: 1;
+}
+
+
+/* footer */
+#footer {
+    height: 650px;
+}
+
+#footer-contact {
+    height: 50%;
+    background-color: rgba(128, 128, 128, 0);
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer-contact h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    font-family: 'pp-neue-montreal';
+    margin-bottom: 32px;
+    display: flex;
+    margin-right: auto;
+    position: flex;
+    transition: all 0.3s ease;
+}
+
+#footer-contact h2:hover {
+    color: rgb(0, 255, 242);
+    transition: all 0.3s ease;
+}
+
+#footer-contact button {
+    border: none;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    border-radius: 100%;
+    transition: all 0.3s ease;
+    position: flex;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 6px;    
+    transition: all 0.3s ease;
+}
+
+#footer-contact button:hover {
+    background-color: rgb(0, 255, 242);
+    color: black;
+    transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+
+
+#footer-info {
+    height: 50%;
+    background-color: white;
+    padding: 60px;
+}
+
+#footer-info h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    font-family: 'pp-neue-montreal';
+    margin-bottom: 32px;
+    display: flex;
+    margin-right: auto;
+    position: flex;
+    transition: all 0.3s ease;
+    color: rgb(0, 0, 0);
 }
