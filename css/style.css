@@ -255,6 +255,7 @@ nav {
 }
 
 #section-2 .title {
+    font-size: 3rem;
     font-weight: 900;
     font-family: pp-neue-montreal;
     
@@ -368,7 +369,7 @@ aside {
 
 #section-3 .title {
     margin-top: 60px;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 900;
     font-family: pp-neue-montreal;
 }
@@ -383,7 +384,7 @@ aside {
 
 .slide {
     flex: 0 0 calc(25.1% - 9.7px); /* Four slides with gap */
-    margin-right: 10px;
+    margin-right: 9.7px;
     text-align: left;
     
 }
@@ -427,6 +428,7 @@ aside {
     display: flex;
     gap: 10px;
     margin-left: auto;
+    align-items: center;
 }
 
 #project-more:hover {
@@ -446,10 +448,10 @@ aside {
 }
 
 #section-4 .title {
-    margin-top: 60px;
-    font-size: 2rem;
+    margin-top: 30px;
+    font-size: 3rem;
     font-weight: 900;
-    font-family: 'pp-neue-montreal', sans-serif;
+    font-family: 'pp-neue-montreal';
     margin-bottom: 32px;
     display: flex;
     margin-right: auto;
@@ -469,7 +471,6 @@ aside {
     padding: 30px;
     transition: all 0.3s ease;
     flex-direction: column;
-    justify-content:space-between;
 }
 
 .testimonial p {
@@ -521,12 +522,27 @@ aside {
     display: flex;
     gap: 10px;
     margin-left: auto;
+    align-items: center;
 }
 #client-more:hover {
     background-color: rgb(0, 255, 242);
     color: black;
     transition: all 0.3s ease;
 }
+
+
+/* section-5 */
+
+#section-5 .title {
+    margin-top: 30px;
+    font-size: 3rem;
+    font-weight: 900;
+    font-family: 'pp-neue-montreal';
+    margin-bottom: 32px;
+    display: flex;
+    margin-right: auto;
+}
+
 
 @keyframes slide {
     from    { transform: translateX(0); }
@@ -548,193 +564,4 @@ aside {
     filter: invert();
     height: 61px;
     margin: 0 30px;
-}
-
-
-
-
-
-
-
-
-
-/* TEST СЕКЦИЯ CLAUDE AI */
-/* Tablet Styles (768px to 1024px) */
-@media screen and (max-width: 1024px) {
-    /* Navbar Adjustments */
-    nav {
-        padding: 15px 20px;
-        height: auto;
-    }
-
-    #right-nav {
-        display: none; /* Hide desktop navigation */
-    }
-
-    .burger-menu {
-        display: flex; /* Show burger menu */
-    }
-
-    /* Section 1 Adjustments */
-    #section-1 {
-        padding: 0 20px;
-    }
-
-    .text1-s1 {
-        font-size: 2.5em;
-    }
-
-    .text2-s1 {
-        flex-direction: column;
-        gap: 2rem;
-        margin-top: 2rem;
-    }
-
-    .info {
-        flex-direction: column;
-        gap: 2rem;
-    }
-
-    #p-foundation, #p-projects, #p-people, #p-clients {
-        font-size: 35px;
-    }
-
-    /* Section 2 Adjustments */
-    #section-2 {
-        flex-direction: column;
-        padding: 99px 20px;
-    }
-
-    aside {
-        margin-top: 0;
-        position: static;
-        width: 100%;
-        text-align: center;
-        margin-bottom: 30px;
-    }
-
-    .services {
-        max-width: 100%;
-        margin-left: 0;
-    }
-
-    /* Section 3 (Projects) Adjustments */
-    #section-3 {
-        padding: 99px 20px;
-    }
-
-    .slider {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .slide {
-        flex: 0 0 calc(50% - 10px);
-        margin-bottom: 20px;
-    }
-
-    .slide img {
-        height: 300px;
-    }
-
-    /* Section 4 (Testimonials) Adjustments */
-    #section-4 {
-        padding: 99px 20px;
-    }
-
-    .testimonials-container {
-        grid-template-columns: 1fr; /* Single column on tablets */
-    }
-}
-
-/* Mobile Styles (up to 767px) */
-@media screen and (max-width: 767px) {
-    /* Global Mobile Adjustments */
-    body {
-        font-size: 14px;
-    }
-
-    /* Section 1 Mobile Adjustments */
-    .text1-s1 {
-        font-size: 2em;
-    }
-
-    .text2-s1 {
-        font-size: 1.2em;
-    }
-
-    #p-foundation, #p-projects, #p-people, #p-clients {
-        font-size: 30px;
-    }
-
-    /* Slider/Carousel Adjustments */
-    .slide {
-        flex: 0 0 100%; /* Full width on mobile */
-    }
-
-    .slide img {
-        height: 250px;
-    }
-
-    /* Services Section */
-    .question h3 {
-        font-size: 1.4rem;
-    }
-
-    .answer p {
-        font-size: 1.2rem;
-    }
-
-    /* Testimonials */
-    .testimonial {
-        padding: 20px;
-    }
-
-    .testimonial p {
-        font-size: 1rem;
-    }
-
-    .client-info img {
-        width: 50px;
-        height: 50px;
-    }
-
-    /* Logos Marquee */
-    .logos-slide img {
-        height: 40px;
-        margin: 0 15px;
-    }
-}
-
-/* Mobile Menu Specific Styles */
-.mobile-menu {
-    display: none;
-    position: fixed;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    backdrop-filter: blur(10px);
-    padding: 20px;
-    box-sizing: border-box;
-    z-index: 1000;
-}
-
-.mobile-menu.active {
-    display: block;
-}
-
-.mobile-menu a {
-    display: block;
-    padding: 15px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    text-align: center;
-    font-size: 1.2rem;
-}
-
-/* Responsive Typography */
-@media screen and (max-width: 767px) {
-    html {
-        font-size: 14px; /* Base font size adjustment */
-    }
 }
