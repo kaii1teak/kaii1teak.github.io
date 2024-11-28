@@ -11,6 +11,7 @@ html, body {
 
 body {
     background: url('../img/background3.gif') no-repeat center center fixed;
+    background-color: black;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
