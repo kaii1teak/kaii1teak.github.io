@@ -615,6 +615,7 @@ aside {
     margin-right: auto;
     position: flex;
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 #footer-contact h2:hover {
