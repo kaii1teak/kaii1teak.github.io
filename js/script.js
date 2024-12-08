@@ -21,15 +21,15 @@ class InfiniteSlider {
         this.slider = document.querySelector(selector);
         this.slides = Array.from(this.slider.children);
         this.totalSlides = this.slides.length;
-        this.visibleSlides = 4; // Number of visible slides
-        this.currentIndex = this.visibleSlides; // Start from the first "real" slide
+        this.visibleSlides = 4; // колво видимых слайдов
+        this.currentIndex = this.visibleSlides;
   
         // Clone slides to create a seamless loop
         this.cloneSlides();
   
         this.allSlides = Array.from(this.slider.children);
-        this.slider.style.transition = "none"; // No animation at the start
-        this.updateSlider(); // Position the slider correctly
+        this.slider.style.transition = "none";
+        this.updateSlider();
   
         this.startX = 0;
         this.isDragging = false;
