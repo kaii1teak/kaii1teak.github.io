@@ -23,7 +23,6 @@ body {
     width: 100%;
     color: whitesmoke;
     margin: 0;
-    font-family: Didact Gothic, sans-serif;
 }
 
 ::selection {
@@ -678,15 +677,16 @@ aside {
     justify-content: space-between;
     border-bottom: 1px solid rgba(255,255,255,0.1);
     padding-bottom: 4rem;
+    font-family: 'pp-neue-montreal';
 }
 
 .footer-content h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 900;
 }
 
 .footer-content span{
-    font-family: "league spartan";
+    font-size: 3rem;
 }
 
 /* Logo Styling */
@@ -703,6 +703,9 @@ aside {
     line-height: 1.6;
 }
 
+.footer-column {
+    font-size: 1.3rem;    
+}
 /* Column Headings */
 .footer-column h3 {
     text-transform: uppercase;
