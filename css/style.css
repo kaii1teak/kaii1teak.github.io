@@ -10,7 +10,7 @@ html, body {
 }
 
 body {
-    background: url('../img/background3.gif') no-repeat center center fixed;
+    background: url('../img/background2.gif') no-repeat center center fixed;
     /*ИЗМЕНИЛ БЭКГРАУНД КОЛОР НА ЧЕРНЫЙ*/
     background-color: black;
     background-size: cover;
@@ -23,6 +23,8 @@ body {
     width: 100%;
     color: whitesmoke;
     margin: 0;
+    font-family: Montserrat;
+    line-height: 1.1;
 }
 
 ::selection {
@@ -54,7 +56,6 @@ nav {
     box-sizing: border-box;
     height: 99px;
     z-index: 2;
-    font-family: Didact Gothic, sans-serif;
 }
 
 #left-nav {
@@ -205,13 +206,11 @@ nav {
     color: rgb(0, 255, 242);
     font-size: 2em;
     font-weight: 900;
-    font-family: pp-neue-montreal;
 }
 
 #p-text {
     color: rgba(245, 245, 245, 0.675);
     font-weight: 600;
-    font-family: pp-neue-montreal;
 }
 
 .text1-s1 {
@@ -259,10 +258,8 @@ nav {
 }
 
 #section-2 .title {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 900;
-    font-family: pp-neue-montreal;
-    
 }
 
 
@@ -308,7 +305,6 @@ nav {
 {
   font-size: 1.7rem;
   margin-right: 20px;
-  font-family: pp-neue-montreal;
   color: #ffffffec;
 }
 
@@ -373,9 +369,8 @@ aside {
 
 #section-3 .title {
     margin-top: 60px;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 900;
-    font-family: pp-neue-montreal;
 }
 
 /* test carousel */
@@ -416,7 +411,6 @@ aside {
     font-size: 20px;
     font-weight: 400;
     color: whitesmoke;
-    font-family: pp-neue-montreal;
 }
 
 #project-more {
@@ -453,9 +447,8 @@ aside {
 
 #section-4 .title {
     margin-top: 30px;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 900;
-    font-family: 'pp-neue-montreal';
     margin-bottom: 32px;
     display: flex;
     margin-right: auto;
@@ -500,7 +493,6 @@ aside {
 }
 
 .client-info h4 {
-    font-family: 'pp-neue-montreal', sans-serif;
     font-size: 1.2rem;
     margin-bottom: 5px;
     color: whitesmoke;
@@ -543,10 +535,9 @@ aside {
 
 #section-5 .title {
     margin-top: 30px;
-    margin-left: 60px;
-    font-size: 3rem;
+    margin-right: 60px;
+    font-size: 2rem;
     font-weight: 900;
-    font-family: 'pp-neue-montreal';
     margin-bottom: 32px;
     display: flex;
     margin-right: auto;
@@ -608,7 +599,6 @@ aside {
 #footer-contact h2 {
     font-size: 3rem;
     font-weight: 900;
-    font-family: 'pp-neue-montreal';
     margin-bottom: 32px;
     display: flex;
     margin-right: auto;
@@ -656,7 +646,6 @@ aside {
 #footer-info h2 {
     font-size: 3rem;
     font-weight: 900;
-    font-family: 'pp-neue-montreal';
     margin-bottom: 32px;
     display: flex;
     margin-right: auto;
@@ -677,7 +666,6 @@ aside {
     justify-content: space-between;
     border-bottom: 1px solid rgba(255,255,255,0.1);
     padding-bottom: 4rem;
-    font-family: 'pp-neue-montreal';
 }
 
 .footer-content h2 {
