@@ -666,16 +666,23 @@ aside {
     justify-content: space-between;
     border-bottom: 1px solid rgba(255,255,255,0.1);
     padding-bottom: 4rem;
+    margin-top: 30px;
 }
 
 .footer-content h2 {
     font-size: 2rem;
     font-weight: 900;
+    color: whitesmoke;
 }
 
-.footer-content span{
-    font-size: 3rem;
+.footer-content span {
+    transition: all 0.3s ease;
 }
+
+.footer-content:hover span {
+    color: rgba(0,255,255)
+}
+
 
 /* Logo Styling */
 .footer-logo {
