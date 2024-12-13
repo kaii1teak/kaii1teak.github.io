@@ -205,3 +205,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
     setInterval(replaceLogoWithTransition, 2000); // Change every 5 seconds
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const navbar = document.getElementById("nav");
+    const lastSection = document.getElementById("footer");
+  
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            nav.classList.add("hidden"); // Hide the navbar
+          } else {
+            nav.classList.remove("hidden"); // Show the navbar
+          }
+        });
+      },
+      {
+        threshold: 0.6, // Trigger when 50% of the last section is visible
+      }
+    );
+  
+    observer.observe(lastSection);
+  });
+  

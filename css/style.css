@@ -10,7 +10,7 @@ html, body {
 }
 
 body {
-    background: url('../img/background2.gif') no-repeat center center fixed;
+    background: url('../img/background3.gif') no-repeat center center fixed;
     /*ИЗМЕНИЛ БЭКГРАУНД КОЛОР НА ЧЕРНЫЙ*/
     background-color: black;
     background-size: cover;
@@ -23,7 +23,7 @@ body {
     width: 100%;
     color: whitesmoke;
     margin: 0;
-    font-family: Nunito;
+    font-family: Montserrat;
     line-height: 1.1;
 }
 
@@ -51,12 +51,22 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    backdrop-filter: blur(9px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     box-sizing: border-box;
     height: 99px;
     z-index: 2;
 }
+
+#nav {
+    transition: all 0.3s ease;
+}
+
+#nav.hidden {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+  
 
 #left-nav {
     display: flex;
@@ -212,6 +222,7 @@ nav {
     padding-right: 60px;
     padding-top: 99px;
     display: flex; /* Arrange aside and services horizontally */
+    margin-bottom: 30px;
 }
 
 #section-2 .title {
@@ -415,7 +426,7 @@ aside {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); /* Автоматическое распределение столбцов */
     grid-auto-rows: auto; /* Высота строк под содержимое */
-    gap: 30px; /* Отступы между элементами */
+    gap: 10px; /* Отступы между элементами */
 }
 
 .testimonial {
@@ -541,7 +552,7 @@ aside {
 
 /* footer */
 #footer {
-    height: 650px;
+    margin-top: 200px;
 }
 
 #footer-contact {
@@ -551,12 +562,14 @@ aside {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 150px;
 }
 
 #footer-contact h2 {
     font-size: 3rem;
     font-weight: 900;
-    margin-bottom: 32px;
+    margin-bottom: auto;
+    margin-top: auto;
     display: flex;
     margin-right: auto;
     position: flex;
@@ -658,6 +671,11 @@ aside {
 
 .footer-column {
     font-size: 1.3rem;    
+}
+
+.footer-column2 {
+    font-size: 1.3rem;   
+    width: 700px; 
 }
 /* Column Headings */
 .footer-column h3 {
@@ -888,7 +906,6 @@ aside {
 
     #section-2 .title {
         font-size: 2rem;
-        margin-bottom: 30px;
     }
 
     .question h3 {
