@@ -75,7 +75,11 @@ nav {
 }
 
 #logo {
-    margin-left: 30px;
+    margin-left: 60px;
+    z-index: 3;
+    position: fixed;
+    margin-top: 29px ;
+    height: 44px;
 }
 
 .contact-nav {
@@ -351,7 +355,7 @@ aside {
 
 .slide {
     flex: 0 0 calc(25% - 10px); /* Four slides with gap */
-    margin-right: 10px;
+    margin-right: 11px;
     text-align: left;
     
 }
@@ -857,8 +861,6 @@ aside {
         align-items: center; 
     }
 
-    .text-s {
-    }
 
     .text-s1 {
         font-size: 2em;

@@ -9,21 +9,28 @@
 </head>
 <body>
     <button class="toggle-btn" onclick="toggleSidebar()">Контакты</button>
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-header">Контакты</div>
+      <div class="sidebar-content">
+        <p class="contact">Contact me</p>
+        <input type="text" class="content" placeholder="Name">
+        <input type="text" class="content" placeholder="Company">
+        <input type="text" class="content" placeholder="Phone">
+        <input type="text" class="content" placeholder="Email">
+        <input type="text" class="content" placeholder="Comment">
+        <input type="checkbox" class="content">
+        <label for="checkbox">I agree to the terms and conditions</label>
+      </div>
+      <div class="sidebar-footer">&copy; 2024 Мой сайт</div>
+    </div>
 
-<div class="sidebar" id="sidebar">
-  <div class="sidebar-header">Контакты</div>
-  <div class="sidebar-content">
-    <p class="content">Contact me</p>
-    <input type="text" class="content" placeholder="Name">
-    <input type="text" class="content" placeholder="Company">
-    <input type="text" class="content" placeholder="Phone">
-    <input type="text" class="content" placeholder="Email">
-    <input type="text" class="content" placeholder="Comment">
-    <input type="checkbox" class="content">
-    <label for="checkbox">I agree to the terms and conditions</label>
-  </div>
-  <div class="sidebar-footer">&copy; 2024 Мой сайт</div>
-</div>
+
+
+
+
+
+
+
 
 <script>
   function toggleSidebar() {

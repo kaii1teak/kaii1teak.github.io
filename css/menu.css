@@ -47,7 +47,6 @@ body {
     flex-direction: column;
     justify-content: space-between;
     z-index: 1000;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
   }
 
   .sidebar.open {
@@ -57,7 +56,6 @@ body {
   .sidebar-header {
     padding: 20px;
     text-align: center;
-    background-color: #444;
     font-size: 20px;
     font-weight: bold;
   }
@@ -70,12 +68,16 @@ body {
   }
 
 
-  .sidebar-content .content {
+    .content {
     display: block;
     margin: 10px 0;
     padding: 10px;
     text-align: center;
     transition: background 0.3s ease;
+  }
+
+  .contact {
+    font-size: 45px;
   }
 
   .sidebar-content a:hover {
@@ -85,7 +87,6 @@ body {
   .sidebar-footer {
     padding: 10px;
     text-align: center;
-    background-color: #444;
     font-size: 14px;
   }
 
@@ -105,4 +106,8 @@ body {
 
   .toggle-btn:hover {
     background-color: #555;
+  }
+
+  ::placeholder {
+    text-align: left;
   }
