@@ -228,3 +228,19 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(lastSection);
   });
   
+  // Инициализация переменных
+const contactButton = document.getElementById("contact-button");
+const nav = document.getElementById("nav");
+
+// Добавляем обработчик события
+contactButton.addEventListener("click", () => {
+    // Переключаем класс для отображения сайдбара
+    nav.classList.toggle("sidebar-open");
+
+    // Изменяем текст кнопки на крестик или возвращаем исходный
+    if (contactButton.innerHTML.includes("→")) {
+        contactButton.innerHTML = "&times;"; // Знак крестика
+    } else {
+        contactButton.innerHTML = "Kontakt z nami <span id=\"span-arrow\">→</span>";
+    }
+});

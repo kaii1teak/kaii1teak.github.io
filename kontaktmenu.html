@@ -6,11 +6,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <button class="toggle-btn" onclick="toggleSidebar()">Контакты</button>
     <div class="sidebar" id="sidebar">
-      <div class="sidebar-header">Контакты</div>
       <div class="sidebar-content">
         <p class="contact">Contact me</p>
         <input type="text" class="content" placeholder="Name">
@@ -18,17 +20,15 @@
         <input type="text" class="content" placeholder="Phone">
         <input type="text" class="content" placeholder="Email">
         <input type="text" class="content" placeholder="Comment">
-        <input type="checkbox" class="content">
-        <label for="checkbox">I agree to the terms and conditions</label>
+        <div class="checkbox">
+          <input type="checkbox" class="content">
+          <label for="checkbox" id="agree">I agree to the terms and conditions</label>
+        </div>
+        <button id="send-button">
+          Send
+        </button>
       </div>
-      <div class="sidebar-footer">&copy; 2024 Мой сайт</div>
     </div>
-
-
-
-
-
-
 
 
 
